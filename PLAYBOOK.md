@@ -1,6 +1,7 @@
 Playbook: Service Status and Incident Project
 1. Branching Strategy
 - We will use a branch for each feature or task (each person works on their own change without changing the main project).
+- Branch names should describe the work being completed
 - Branches must be merged within 7 days (the work should not stay separate for more than one week).
 - Team members will not directly push unfinished work to main (the main branch should only contain completed work).
 
