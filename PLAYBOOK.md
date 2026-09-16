@@ -1,4 +1,5 @@
 Playbook: Service Status and Incident Project
+Version: v0.2
 1. Branching Strategy
 - We will use a branch for each feature or task (each person works on their own change without changing the main project).
 - Branch names should describe the work being completed
@@ -27,3 +28,30 @@ Playbook: Service Status and Incident Project
 - Review comments must be fixed before merging (if your teammate finds a problem, fix it before adding the work to main).
 - If a pull request is not reviewed within 48 hours (2 days), the team member will remind the team.
 - Pull requests cannot be merged until the required approval is received (you must have another teammate approve it first).
+
+5. AI Tools and Use
+
+Approved Tools
+
+- The team may use ChatGPT for brainstorming, explaining concepts, debugging help, documentation, and generating ideas.
+- ChatGPT may be used to help write or improve code, but team members must understand and check any AI-generated code before using it.
+- AI tools should not make final project decisions without review by a team member.
+- Each team member is responsible for the work they submit, even when AI was used to help create it.
+
+Prompt Log Policy
+
+- Significant AI use for the project will be recorded in an AI prompt log.
+- The prompt log will be stored in the team repository.
+- The log should include the date, team member, AI tool used, and the prompt or a short description of the prompt.
+- Each team member is responsible for recording their own significant AI use.
+- The prompt log will be updated when AI is used for significant code, documentation, design, or project decisions.
+- Passwords, API keys, private information, or other sensitive information should not be entered into AI tools or the prompt log.
+
+AI-Assisted Code Review
+
+- AI code review does not replace the required human code review.
+- An AI tool may be used to find possible bugs, errors, security issues, or other problems in a pull request.
+- Team members should review AI feedback and make appropriate changes when needed.
+- The required approval from another team member is still necessary before a pull request can be merged.
+- Human review is required because a team member must understand the code and take responsibility for the final approval.
+
