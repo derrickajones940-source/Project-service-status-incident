@@ -225,17 +225,7 @@ The traceability table connects:
 | NF-5 | US-3, US-5, US-6 |
 | NF-6 | All applicable stories |
 
----
-
-# 6. Gaps and Conflicts
-- Does every charter goal have at least one requirement?
-- Does every requirement connect to a user story?
-- Does every user story connect to a requirement?
-- Are any requirements outside the project scope?
-- Are any requirements missing?
-- Are the requirements and user stories consistent with each other?
-
-# 7. Authorship
+# 6. Authorship
 - Stakeholder Analysis — [Karen]
 - Functional Requirements — [Derricka]
 - Non-Functional Requirements — [Derricka]
@@ -245,7 +235,7 @@ The traceability table connects:
 - Traceability — [Karen]
 - Gaps and Conflicts — [Derricka]
 - AI Disclosure — [Karen-Derricka]
-# 8. AI-Use Disclosure
+# 7. AI-Use Disclosure
 
 The team used ChatGPT to help brainstorm requirements, organize user stories, improve wording, and check for possible gaps.
 The team reviewed the AI suggestions and made the final decisions about the requirements.
