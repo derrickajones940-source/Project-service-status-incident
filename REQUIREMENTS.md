@@ -67,12 +67,12 @@
 
 # 3. Non-Functional Requirements
 
-**1.** The system shall display a requested service status within **3 seconds**.
-**2.** The system shall check each monitored service at least **once every 60 seconds**.
-**3.** The system shall send a notification within **60 seconds** after detecting a Degraded or Down condition.
-**4.** The system shall keep incident records for at least **30 days**.
-**5.** Only authorized team members shall be able to create, update, or resolve incidents.
-**6.** Each implemented functional requirement shall have at least **one test case**.
+**NF-1.** The system shall display a requested service status within **3 seconds**.
+**NF-2.** The system shall check each monitored service at least **once every 60 seconds**.
+**NF-3.** The system shall send a notification within **60 seconds** after detecting a Degraded or Down condition.
+**NF-4.** The system shall keep incident records for at least **30 days**.
+**NF-5.** Only authorized team members shall be able to create, update, or resolve incidents.
+**NF-6.** Each implemented functional requirement shall have at least **one test case**.
 
 ---
 
@@ -218,12 +218,12 @@ The traceability table connects:
 
 | Requirement | Related User Story |
 |---|---|
-| NFR-1 | US-1 |
-| NFR-2 | US-2 |
-| NFR-3 | US-8, US-9 |
-| NFR-4 | US-7 |
-| NFR-5 | US-3, US-5, US-6 |
-| NFR-6 | All applicable stories |
+| NF-1 | US-1 |
+| NF-2 | US-2 |
+| NF-3 | US-8, US-9 |
+| NF-4 | US-7 |
+| NF-5 | US-3, US-5, US-6 |
+| NF-6 | All applicable stories |
 
 ---
 
