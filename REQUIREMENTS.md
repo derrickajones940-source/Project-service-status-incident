@@ -17,7 +17,7 @@
 ### Subscribers
 - **Interest:** Receive updates when a service has a problem.
 - **Influence:** Medium.
-= **Need:** Notifications through their selected method (email, Teams, or text).
+- **Need:** Notifications through their selected method (email, Teams, or text).
 
 ### Developers
 - **Interest:** Find and fix service problems.
