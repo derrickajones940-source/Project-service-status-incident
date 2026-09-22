@@ -92,8 +92,8 @@
 
 # 4. Epics and User Stories
 ## Epic 1: Service Monitoring
-### US-1: View Service Status
 
+### US-1: View Service Status
 **Story:**  
 As a service user, I want to see the current service status so I know if it is working.
 
@@ -112,7 +112,6 @@ As an engineering user, I want to set how often a service is checked so monitori
 - The system checks the service according to the selected freqeuncy.
 
 ### US-3: Manually Check a System
-
 **Story:**  
 As an engineering user, I want to manually check a service so I can investigate a problem when needed.
 
@@ -121,12 +120,9 @@ As an engineering user, I want to manually check a service so I can investigate 
 - The system performs the health check.
 - The result is displayed.
 
----
-
 ## Epic 2: Incident Management
 
 ### US-4: Create an Incident
-
 **Story:**  
 As an engineering user, I want to create an incident so a service problem can be recorded.
 
@@ -136,7 +132,6 @@ As an engineering user, I want to create an incident so a service problem can be
 - The incident is saved.
 
 ### US-5: Add Incident Details
-
 **Story:**  
 As an engineering user, I want to add details to an incident so other team members know what happened.
 
@@ -147,7 +142,6 @@ As an engineering user, I want to add details to an incident so other team membe
 - A ticket number can be added.
 
 ### US-6: Update an Incident
-
 **Story:**  
 As an engineering user, I want to update an incident so the information stays current.
 
@@ -156,7 +150,6 @@ As an engineering user, I want to update an incident so the information stays cu
 - The updated information is saved.
 
 ### US-7: Resolve an Incident
-
 **Story:**  
 As an engineering user, I want to resolve an incident when the problem is fixed.
 
@@ -166,7 +159,6 @@ As an engineering user, I want to resolve an incident when the problem is fixed.
 - The incident remains in the history.
 
 ### US-8: View Incident History
-
 **Story:**  
 As an engineering user, I want to view previous incidents so I can review past problems.
 
@@ -178,7 +170,6 @@ As an engineering user, I want to view previous incidents so I can review past p
 ## Epic 3: Notifications
 
 ### US-9: Select Notification Method
-
 **Story:**  
 As a subscriber, I want to select how I receive notifications so I can use my preferred method.
 
@@ -188,7 +179,6 @@ As a subscriber, I want to select how I receive notifications so I can use my pr
 - The system uses the selected method for notifications.
 
 ### US-10: Receive Service Notifications
-
 **Story:**  
 As a subscriber I want to receive a notification when a service becomes degraded or goes down so I know about the problem quickly.
 
@@ -198,12 +188,9 @@ As a subscriber I want to receive a notification when a service becomes degraded
 - The notification shows the service status.
 - The notification is sent using the subscriber's selected method.
 
----
-
 ## Epic 4: AI Assistance
 
 ### US-11: Generate AI Summary
-
 **Story:**  
 As an engineering user, I want AI to summarize an incident so I can understand the important information faster.
 
@@ -213,7 +200,6 @@ As an engineering user, I want AI to summarize an incident so I can understand t
 - The summary is identified as AI-generated.
 
 ### US-12: Review AI Summary
-
 **Story:**  
 As an engineering user, I want to review the AI summary so incorrect information is not accepted.
 
@@ -222,7 +208,6 @@ As an engineering user, I want to review the AI summary so incorrect information
 - The team member can make changes.
 - The team member decides whether the summary is acceptable.
 - An unreviewed summary cannot be saved as final incident information.
-
 
 ---
 
