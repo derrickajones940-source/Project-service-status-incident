@@ -14,6 +14,8 @@ The service will display one of the following statuses:
 * Degraded
 * Down
 
+The team will demonstrate that a service's current status can be viewed through the system.
+
 **T2 Traceability:** FR-1, FR-2
 **Related User Story:** US-1
 
@@ -29,21 +31,27 @@ An incident will include basic information such as:
 * Notes
 * Ticket number
 
+The team will demonstrate creating an incident, updating its information, and resolving the incident.
+
 **T2 Traceability:** FR-6, FR-7, FR-8, FR-9
 **Related User Stories:** US-4, US-5, US-6, US-7
 
 ### 3. Incident History
 
-The system will keep previous incidents so team members can view past incidents and their information.
+The system will store previous incidents so authorized team members can view past incidents and their information.
+
+The team will demonstrate creating an incident and then viewing that incident in the incident history.
 
 **T2 Traceability:** FR-10
 **Related User Story:** US-8
 
 ### 4. Basic AI Incident Summary
 
-A team member will be able to request an AI-generated summary of an incident. The summary will use the available incident information.
+A team member will be able to request an AI-generated summary of an incident using the available incident information.
 
-A team member will review the AI-generated summary before it can be used as final incident information.
+The generated summary will be presented to a team member for review before it can be used as final incident information.
+
+The team will demonstrate generating an incident summary and reviewing the generated result.
 
 **T2 Traceability:** FR-16, FR-17, FR-18
 **Related User Stories:** US-11, US-12
@@ -112,9 +120,9 @@ The main risks to completing the committed scope are:
 If the team falls behind schedule, features will be removed in the following order:
 
 1. AI incident summary.
-2. Additional incident details or interface improvements.
-3. Incident history improvements.
-4. Basic incident management improvements.
+2. Nonessential incident interface details.
+3. Incident history functionality.
+4. Basic incident management functionality, only if necessary.
 
 The team will keep the basic service status display and basic incident management as the core of the project.
 
@@ -122,4 +130,4 @@ The team will keep the basic service status display and basic incident managemen
 
 Our team is committing to demonstrating four core areas by Session 26: viewing service status, basic incident management, incident history, and a basic AI incident summary with human review.
 
-We are intentionally deferring automated monitoring and subscriber notifications because the team has two members and only two sprints remaining. This smaller scope gives the team a realistic amount of work that can be completed, tested, and demonstrated.
+We are intentionally deferring automated monitoring, manual health checks, and subscriber notifications because the team has two members and only two sprints remaining. This smaller scope gives the team a realistic amount of work that can be completed, tested, and demonstrated.
