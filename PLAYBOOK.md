@@ -13,19 +13,19 @@
 
 ## 2. Quality Gates & Enforcement Tools
 
-To maintain code quality and stability, all Python/Django code submitted to the repository must pass four mandatory quality gates.
+To make sure our Python/Django code works and doesn't break the repo when we merge, all code has to pass these four quality gates:
 
-| Gate Name | What It Checks | Concrete Tool | Execution Location | Failure Action |
+| Gate Name | What It Checks | Concrete Tool | Where It Runs | What Happens on Failure |
 | :--- | :--- | :--- | :--- | :--- |
-| **Linting & Code Formatting** | Syntax errors, PEP 8 style violations, unused imports, and code formatting consistency. | `ruff` | Both (Local via developer terminal / pre-commit & CI via GitHub Actions) | **Local:** Prevents clean commit. <br>**CI:** Fails workflow job and **blocks Pull Request merge**. |
-| **Static Type Checking** | Type correctness, improper function arguments, and Django model/ORMs typing using `django-stubs`. | `mypy` | Both (Local developer run & CI via GitHub Actions) | **Local:** Developer fixes type warnings. <br>**CI:** Fails workflow job and **blocks Pull Request merge**. |
-| **Test Suite Execution** | Correctness of Django models, views, APIs, and business logic. | `pytest` (with `pytest-django`) | Both (Local development environment & CI test runner in GitHub Actions) | **Local:** Unsaved broken changes. <br>**CI:** Fails workflow job and **blocks Pull Request merge**. |
-| **Security Static Analysis** | Common security vulnerabilities in Python code (e.g., hardcoded secrets, unsafe SQL queries, unsafe `eval` usage). | `bandit` | CI (GitHub Actions security job) | **CI:** Fails workflow job and **blocks Pull Request merge**. |
+| **Linting & Formatting** | Catches syntax mistakes, style issues (PEP 8), and unused imports. | `ruff` | Both (Local via terminal/pre-commit & in GitHub Actions CI) | **Local:** Stops `git commit`. <br>**CI:** Fails the workflow and **blocks the PR merge**. |
+| **Static Type Checking** | Checks function types, arguments, and Django model/ORM types using `django-stubs`. | `mypy` | Both (Local check & in GitHub Actions CI) | **Local:** Warns the developer. <br>**CI:** Fails the workflow and **blocks the PR merge**. |
+| **Test Suite** | Runs our tests to make sure models, views, and APIs work properly. | `pytest` (with `pytest-django`) | Both (Local dev environment & GitHub Actions CI test runner) | **Local:** Stops pushing broken code. <br>**CI:** Fails the workflow and **blocks the PR merge**. |
+| **Security Scanning** | Scans our Python code for security risks (like hardcoded passwords or unsafe SQL). | `bandit` | CI (GitHub Actions pipeline) | **CI:** Fails the security check and **blocks the PR merge**. |
 
-### Note on Code Coverage Floor
+### Code Coverage Floor Note
 > **Status:** **Deferred to Amendment 1 (Session 15)**
 > 
-> A numeric code coverage percentage target (e.g., 80%) is **not** set in version v0.3. In accordance with the course roadmap, we will generate and review an actual coverage report (`pytest-cov`) for our codebase during session 15. A concrete numeric floor will be formally established and locked in **Amendment 1 at Session 15**, ensuring our target is based on empirical codebase metrics rather than guesswork.
+> We are **not** setting a numeric coverage percentage target in version v0.3. Once we actually write code and generate a real coverage report (`pytest-cov`), we'll pick a realistic number based on our actual codebase. We will officially set and lock in the coverage floor in **Amendment 1 at Session 15**.
 
 ---
 
@@ -33,7 +33,7 @@ To maintain code quality and stability, all Python/Django code submitted to the 
 A task is done when:
 - The work is completed (everything required for the task has been finished).
 - The work has been tested (we checked that it works).
-- Tests pass (all `pytest` checks and quality gates pass with no errors).
+- Tests pass (all quality gates and tests pass with no errors).
 - The work has been reviewed by another team member (someone else checks the work).
 - The pull request has been approved and merged into main (the team accepted the work and added it to the main project).
 
